@@ -10,6 +10,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SigninComponent } from './+signin/signin.component';
+import { MainComponent } from './+main/main.component';
 
 import {
   MdAutocompleteModule,
@@ -36,7 +38,6 @@ import {
   MdToolbarModule,
   MdTooltipModule
 } from '@angular/material';
-
 
 export const MaterialModules = [
   MdAutocompleteModule,
@@ -66,7 +67,9 @@ export const MaterialModules = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SigninComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
