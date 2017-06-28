@@ -1,0 +1,31 @@
+$horz-adding: 30px;
+
+md-card {
+    padding: 0;
+
+    md-card-title {
+        background-color: #089889;
+        padding: 15px $horz-adding;
+        margin: 0;
+        
+        h2 {
+            margin: 0;
+            color: white;
+            font-weight: normal;
+        }
+    }
+
+    md-card-content {
+        padding: $horz-adding;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 18px;
+
+        button {
+            background-color: #800000;
+            color: white;
+            font-size: 18px;
+            margin: 20px;
+            padding: 5px 20px;
+        }
+    }
+}
