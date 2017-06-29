@@ -1,4 +1,4 @@
-<md-grid-list cols="3">
+<md-grid-list [cols]="numColumns" gutterSize="10px" rowHeight="200px">
   <md-grid-tile *ngFor="let password of passwordStream | async">
     <pre>{{password | json}}</pre>
   </md-grid-tile>
