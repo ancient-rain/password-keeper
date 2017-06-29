@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Password } from "app/models/password.model";
+import { MdDialogRef } from "@angular/material";
 
 @Component({
   selector: 'app-password-dialog',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasswordDialogComponent implements OnInit {
 
-  constructor() { }
+  formPassword: Password;
+
+  constructor(private dialogRef : MdDialogRef<PasswordDialogComponent>) {
+    this.formPassword = new Password();
+  }
 
   ngOnInit() {
   }
 
+  onSubmit() {
+    this.dialogRef.close();
+  }
 }
