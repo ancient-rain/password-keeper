@@ -8,4 +8,5 @@ export const environment = {
     storageBucket: "bednartd-password-keeper.appspot.com",
     messagingSenderId: "616704615739"
   },
+  rosefireRegistryToken: "9c26c9c3-1ef7-4081-a593-d9d874fd90c9",
 };
