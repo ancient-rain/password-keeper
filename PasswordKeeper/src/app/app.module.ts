@@ -39,6 +39,7 @@ import {
   MdTooltipModule
 } from '@angular/material';
 import { PasswordDialogComponent } from './password-dialog/password-dialog.component';
+import { PasswordDisplayCardComponent } from './password-display-card/password-display-card.component';
 
 export const MaterialModules = [
   MdAutocompleteModule,
@@ -72,6 +73,7 @@ export const MaterialModules = [
     SigninComponent,
     MainComponent,
     PasswordDialogComponent,
+    PasswordDisplayCardComponent,
   ],
   entryComponents: [
     PasswordDialogComponent,
