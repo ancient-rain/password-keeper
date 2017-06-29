@@ -1,6 +1,6 @@
 <md-grid-list [cols]="numColumns" gutterSize="10px" rowHeight="200px">
   <md-grid-tile *ngFor="let password of passwordStream | async">
-    <pre>{{password | json}}</pre>
+    <app-password-display-card fxFlex [password]=password></app-password-display-card>
   </md-grid-tile>
 </md-grid-list>
 <a md-fab (click)="showPasswordDialog()">
