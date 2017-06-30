@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import 'rosefire';
-import { AngularFireAuth } from "angularfire2/auth";
-import { environment } from "environments/environment";
-import { Router } from "@angular/router";
+import { AngularFireAuth } from 'angularfire2/auth';
+import { environment } from 'environments/environment';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',

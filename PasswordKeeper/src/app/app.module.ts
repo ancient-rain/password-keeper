@@ -12,59 +12,35 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SigninComponent } from './+signin/signin.component';
 import { MainComponent } from './+main/main.component';
-
-import {
-  MdAutocompleteModule,
-  MdButtonModule,
-  MdButtonToggleModule,
-  MdCardModule,
-  MdCheckboxModule,
-  MdDialogModule,
-  MdGridListModule,
-  MdIconModule,
-  MdInputModule,
-  MdListModule,
-  MdMenuModule,
-  MdProgressBarModule,
-  MdProgressSpinnerModule,
-  MdRadioModule,
-  MdRippleModule,
-  MdSelectModule,
-  MdSidenavModule,
-  MdSliderModule,
-  MdSlideToggleModule,
-  MdSnackBarModule,
-  MdTabsModule,
-  MdToolbarModule,
-  MdTooltipModule
-} from '@angular/material';
 import { PasswordDialogComponent } from './password-dialog/password-dialog.component';
 import { PasswordDisplayCardComponent } from './password-display-card/password-display-card.component';
 
-export const MaterialModules = [
-  MdAutocompleteModule,
+import {
   MdButtonModule,
-  MdButtonToggleModule,
   MdCardModule,
-  MdCheckboxModule,
   MdDialogModule,
   MdGridListModule,
   MdIconModule,
   MdInputModule,
   MdListModule,
   MdMenuModule,
-  MdProgressBarModule,
-  MdProgressSpinnerModule,
-  MdRadioModule,
   MdRippleModule,
-  MdSelectModule,
-  MdSidenavModule,
-  MdSliderModule,
-  MdSlideToggleModule,
   MdSnackBarModule,
-  MdTabsModule,
   MdToolbarModule,
-  MdTooltipModule,
+} from '@angular/material';
+
+export const MaterialModules = [
+  MdButtonModule,
+  MdCardModule,
+  MdDialogModule,
+  MdGridListModule,
+  MdIconModule,
+  MdInputModule,
+  MdListModule,
+  MdMenuModule,
+  MdRippleModule,
+  MdSnackBarModule,
+  MdToolbarModule,
 ];
 
 @NgModule({

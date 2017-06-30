@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { Password } from "app/models/password.model";
-import { MdDialogRef, MD_DIALOG_DATA } from "@angular/material";
+import { Password } from 'app/models/password.model';
+import { MdDialogRef, MD_DIALOG_DATA } from '@angular/material';
 import * as firebase from 'firebase/app';
 
 interface PasswordDialogData {
@@ -16,7 +16,7 @@ interface PasswordDialogData {
 export class PasswordDialogComponent implements OnInit {
 
   formPassword: Password;
-  title = "Add a new password";
+  title = 'Add a new password';
 
   constructor(private dialogRef: MdDialogRef<PasswordDialogComponent>,
     @Inject(MD_DIALOG_DATA) private dialogData: PasswordDialogData) {
@@ -25,7 +25,7 @@ export class PasswordDialogComponent implements OnInit {
 
   ngOnInit() {
     if (this.dialogData.password) {
-      this.title = "Edit this password";
+      this.title = 'Edit this password';
       Object.assign(this.formPassword, this.dialogData.password);
     }
   }

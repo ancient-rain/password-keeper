@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from "rxjs/Subscription";
-import { AngularFireAuth } from "angularfire2/auth";
+import { Subscription } from 'rxjs/Subscription';
+import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
-import { Router } from "@angular/router";
-import { FirebaseListObservable, AngularFireDatabase } from "angularfire2/database";
-import { Password } from "app/models/password.model";
-import { MdDialog, MdDialogConfig } from "@angular/material";
-import { PasswordDialogComponent } from "app/password-dialog/password-dialog.component";
+import { Router } from '@angular/router';
+import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
+import { Password } from 'app/models/password.model';
+import { MdDialog, MdDialogConfig } from '@angular/material';
+import { PasswordDialogComponent } from 'app/password-dialog/password-dialog.component';
 
 @Component({
   selector: 'app-main',
@@ -19,7 +19,7 @@ export class MainComponent implements OnInit, OnDestroy {
   firebasePath: string;
   passwordStream: FirebaseListObservable<Password[]>;
 
-  constructor(private afAuth: AngularFireAuth, 
+  constructor(private afAuth: AngularFireAuth,
     private router: Router,
     private db: AngularFireDatabase,
     private dialog: MdDialog) { }
